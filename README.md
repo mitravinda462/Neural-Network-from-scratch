@@ -1,10 +1,14 @@
 # Neural-Network-from-scratch-
 Designing a neural network from scratch using numpy.
+
 Implementation:
+
 •	The class ‘NN’ is implemented where the features and functionalities of the neural network is defined.
+
 •	Initialization : 
 ->The weights and biases to be used in neural network are initialized here.
 -> They are initialized with random samples from uniform distribution which lies in the range (-1,1).
+
 •	Forward propagation :
 ->The input given to the input layer is passed through each of the other 3 layers to obtain the predicted output.
 ->The hidden layers and the output layer have a summation(Z) and an activation function (A).
@@ -23,6 +27,7 @@ Implementation:
 W = W – lr * ( delta * activation of previous layer)
 -> The error for current layer is calculated by  removing the bias from the weights of the previous layer and multiplying the result with delta .
 ->Finally, the newly calculated weights are returned.
+
 •	Train: 
 ->For every row in the dataset which is passed as the input to the neural network, initialization of weights and biases, forward propagation and backward propagation are implemented
 
@@ -36,6 +41,7 @@ W = W – lr * ( delta * activation of previous layer)
 •	Fit :
 ->Used to train the neural network epoch number of times.
 -> It takes X_train and Y_train samples as input
+
 •	Accuracy :
 ->Used to obtain the training and testing accuracy of the neural network .
 ->Gives the percentage of rightly predicted outputs.
